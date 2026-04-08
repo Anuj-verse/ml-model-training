@@ -37,7 +37,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🚀 Interactive ML Pipeline Dashboard")
+st.title(" Interactive ML Pipeline Dashboard")
 
 # --- Session State Initialization ---
 if 'data' not in st.session_state:
