@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Streamlit specific (keeps your credentials safe)
+.streamlit/secrets.toml
+
+# Datasets and local data files (preventing large uploads)
+*.csv
+*.xlsx
+*.parquet
+*.dat
+*.out
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints (common in ML projects)
+.ipynb_checkpoints
+
+# IDEs and OS specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
