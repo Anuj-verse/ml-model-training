@@ -13,7 +13,6 @@ env/
 .streamlit/secrets.toml
 
 # Datasets and local data files (preventing large uploads)
-*.csv
 *.xlsx
 *.parquet
 *.dat
