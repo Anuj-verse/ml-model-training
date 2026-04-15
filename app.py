@@ -43,8 +43,10 @@ st.title(" Interactive ML Pipeline: Body Fat Prediction")
 # --- Load Built-in Data ---
 @st.cache_data
 def load_data():
-    if os.path.exists("https://drive.google.com/file/d/1XQD9eMFgpAv2xwg_XCUAk_mz5JCjfG7w/view?usp=sharing"):
-        df = pd.read_csv("https://drive.google.com/file/d/1XQD9eMFgpAv2xwg_XCUAk_mz5JCjfG7w/view?usp=sharing")
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(BASE_DIR, "bodyfat.csv")
+    if os.path.exists(file_path):
+        df = pd.read_csv(file_path)
         # Automatically drop Density to prevent data leakage
         if "Density" in df.columns:
             df = df.drop(columns=["Density"])
